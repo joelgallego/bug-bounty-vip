@@ -1,0 +1,8 @@
+# Dependencias de Python del motor.
+#
+# El recon usa además binarios externos que NO se instalan desde aquí:
+# subfinder, dnsx, httpx, naabu, gau, gotator, puredns y massdns (los de
+# ProjectDiscovery en ~/go/bin, subfinder en el PATH), más `nuclei` y
+# `webanalyze` para el enriquecimiento. Ver docs/recon.md.
+requests
+tldextract

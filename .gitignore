@@ -1,0 +1,39 @@
+# Estado y artefactos de ejecución: nada de esto es código, y buena parte de
+# ello no debería salir nunca de la máquina donde corre.
+__pycache__/
+*.py[co]
+
+# Bases de datos y su journal de WAL
+*.db
+*.db-wal
+*.db-shm
+*.db.bak-*
+
+# Salidas de ejecución
+logs/
+*.log
+nuevos_log.txt
+.fuente_estancada.stamp
+
+# Feeds: los propios y los de respaldo local
+feeds_local/
+feeds_gobugfree/
+feeds_standoff/
+feeds_marketplace/
+
+# Material de recon y datos derivados
+recon/
+recon_assets/
+technologies.json
+backup/
+backups/
+
+# Estado de la publicación
+.publicar.lock
+.publicar.stamp
+.publicar.huella
+
+# Credenciales, por si alguien tiene la tentación de dejarlas cerca
+*credentials*
+*.pem
+*.key
